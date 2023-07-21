@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="main-container">
+  <header class="cabecera" id="cabecera">
+    <div class="cabecera-nav">
+     <img class="cabecera-menu" src="./images/icon-menu.svg" alt="">
+     <a href="#"><img class="logo-cabecera" src="./images/logo.svg" alt=""></a>
+     <nav class="menu">
+      <ul class="menu-items">
+        <li class="menu-link">Collections</li>
+        <li class="menu-link">Men</li>
+        <li class="menu-link">Women</li>
+        <li class="menu-link">About</li>
+        <li class="menu-link">Contact</li>
+      </ul>
+     </nav>
+     
+    </div>
+     <!-- inicio modal menu -->
+
+     <div class="modal-menu-background">
+      <nav class="modal-menu">
+        <img class="modal-cerrar-menu" src="./images/icon-close.svg" alt="">
+        <ul class="modal-menu-items">
+          <li class="modal-menu-link"><a href="#"></a>Collections</li>
+          <li class="modal-menu-link"><a href="#"></a>Women</li>
+          <li class="modal-menu-link"><a href="#"></a>About</li>
+          <li class="modal-menu-link"><a href="#"></a>Contact</li>
+        </ul>
+      </nav>
+     </div>
+
+     <!-- final modal menu -->
+     <div class="compras">
+      <div class="carrito">
+        <div class="carrito-notificacion">0</div>
+        <img class="cabecera-carrito" src="./images/icon-cart.svg" alt="">
+      </div>
+      <img class="cabecera-avatar" src="./images/image-avatar.png" alt="">
+     </div>
+  </header>
+
+
+  <section class="content">
+    <article class="galeria">
+      <div class="galeria-imagen-container">
+          <img class="galleria_anterior" src="./images/icon-previous.svg" alt="">
+          <img class="galleria_proxima" src="./images/icon-next.svg" alt="">
+        </div>
+          <div class="galeria-thumnails">
+             <img id="1" class="galeria-thumnail" src="./images/image-product-1-thumbnail.jpg" alt="thumnails">
+             <img id="2" class="galeria-thumnail" src="./images/image-product-2-thumbnail.jpg" alt="thumnails">
+             <img id="3" class="galeria-thumnail" src="./images/image-product-3-thumbnail.jpg" alt="thumnails">
+             <img id="4" class="galeria-thumnail" src="./images/image-product-4-thumbnail.jpg" alt="thumnails">
+         
+        </div>
+    </article>
+
+    <article class="detalles">
+      <h2 class="titulo-compania">Sneaker Company</h2>
+      <h2 class="titulo-producto">Fall Limited Edition Sneakers</h2>
+      <p class="detalle-producto">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        <div class="detalle-precio">
+          <p class="precio-ahora">$125.00 <span class="descuento">50%</span></p>
+          <p class="precio-antes">$250.00</p>
+        </div>
+        <div class="producto-cantidad">
+          <div class="input">
+            <img class="input_menos" src="./images/icon-minus.svg" alt="menos">
+            <input class="input_numero" type="text" value="0">
+            <img class="input_mas" src="./images/icon-plus.svg" alt="mas">
+          </div>
+          <button class="detalles-boton"> <img src="./images/icon-cart-white.svg" alt="">Add to cart</button>
+        </div>
+    </article>
+  </section>
+
+  <!-- inicio carrito modal -->
+
+  <div class="carrito-modal">
+    <p class="tirulo-carrito-modal">Cart</p>
+    <div class="carrito-modal-container-chekout">
+      <div class="carrito-modal-detalles">
+        <img class="carrito-modal-imagen" src="./images/image-product-1-thumbnail.jpg" alt="">
+        <div>
+          <p class="carrito-modal-producto">Fall Limited Edition Sneakers</p>
+          <p class="carrito-modal-precio">$125.00 x3 <span>$375.00</span></p>
+        </div>
+        <img class="carrito-modal-borrar" src="./images/icon-delete.svg" alt="">
+      </div>
+      <button class="carrito-modal-chekout">Chekout</button>
+    </div>
+  </div>
+
+  
+  <!-- fin carrito modal -->
+
+</main>
+
+  Collections
+  Men
+  Women
+  About
+  Contact
+
+  Sneaker Company
+
+  Fall Limited Edition Sneakers
+
+  These low-profile sneakers are your perfect casual wear companion. Featuring a 
+  durable rubber outer sole, they’ll withstand everything the weather can offer.
+
+  $125.00
+  50%
+  $250.00
+
+  0
+  Add to cart
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <!-- inicio galeria modal -->
+  <div class="galeria-modal-background">
+    <article class="galeria-modal">
+      <div class="galeria-modal-cerrar-container">
+        <img class="modal-galeria-cerrar"  src="./images/icon-close.svg" alt="icon-close">
+      </div>
+      <div class="galeria-modal-imagen-container">
+        <img class="galeria-modal-imagen-anterior" src="./images/icon-previous.svg" alt="previous">
+        <img class="galeria-modal-imagen-proxima" src="./images/icon-next.svg" alt="next">
+      </div>
+      <div class="modal-galeria-thumnails">
+        <img id="m1" class="galeria-modal-thumnail" src="./images/image-product-1-thumbnail.jpg" alt="thumnails">
+        <img id="m2" class="galeria-modal-thumnail" src="./images/image-product-2-thumbnail.jpg" alt="thumnails">
+        <img id="m3" class="galeria-modal-thumnail" src="./images/image-product-3-thumbnail.jpg" alt="thumnails">
+        <img id="m4" class="galeria-modal-thumnail" src="./images/image-product-4-thumbnail.jpg" alt="thumnails">
+      </div>
+    </article>
+  </div>
+   <!-- fin galeria modal -->
+
+  <script src="js/script.js"></script>
+</body>
+</html>
